@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DevOps / SRE специалисты — Stuffpoint Recruitment</title>
+    <meta name="description" content="Подбор DevOps и SRE специалистов: cloud, Kubernetes, CI/CD, observability." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../landing.css" />
+  </head>
+  <body>
+    <div class="bg-layer" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="../index.html#hero">Stuffpoint Recruitment</a>
+      <nav class="topnav" aria-label="Навигация страницы">
+        <a href="../index.html#tracks">Все направления</a>
+        <a href="../index.html#contacts">Контакты</a>
+      </nav>
+      <button class="btn btn-small" type="button" data-open-modal>Связаться</button>
+    </header>
+
+    <main class="section specialist-page">
+      <a class="back-link" href="../index.html#tracks">← К направлениям</a>
+      <div class="page-intro reveal">
+        <p class="eyebrow">DevOps & SRE</p>
+        <h1>DevOps и SRE инженеры для надежной инфраструктуры</h1>
+        <p class="lead">Подбираем специалистов, которые ускоряют релизы и повышают устойчивость платформы.</p>
+      </div>
+
+      <section class="specialists-layout">
+        <article class="profile-card reveal">
+          <h2>Кирилл Голубев</h2>
+          <p class="meta">Senior DevOps Engineer · 8 лет опыта · Москва</p>
+          <ul class="chip-list"><li>Kubernetes</li><li>Terraform</li><li>AWS</li><li>GitLab CI</li></ul>
+          <p>Автоматизировал деплой и инфраструктуру для SaaS-платформы с ежедневными релизами.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Сергей Плотников</h2>
+          <p class="meta">SRE Engineer · 7 лет опыта · Алматы</p>
+          <ul class="chip-list"><li>Observability</li><li>Prometheus</li><li>Grafana</li><li>Incident Response</li></ul>
+          <p>Строит практики SRE, помогает снизить MTTR и стабилизировать критические сервисы.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Оксана Рыбакова</h2>
+          <p class="meta">Cloud DevOps · 6 лет опыта · Санкт-Петербург</p>
+          <ul class="chip-list"><li>Yandex Cloud</li><li>Helm</li><li>Ansible</li><li>Vault</li></ul>
+          <p>Сильна в миграциях в облако, настройке безопасного доступа и инфраструктуре как коде.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Павел Жданов</h2>
+          <p class="meta">Platform Engineer · 9 лет опыта · Минск</p>
+          <ul class="chip-list"><li>Platform Engineering</li><li>ArgoCD</li><li>Docker</li><li>Linux</li></ul>
+          <p>Собирает внутренние платформы для продуктовых команд, сокращая time-to-production.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Антон Смагин</h2>
+          <p class="meta">DevSecOps Engineer · 7 лет опыта · Тбилиси</p>
+          <ul class="chip-list"><li>DevSecOps</li><li>SonarQube</li><li>Trivy</li><li>Policy as Code</li></ul>
+          <p>Интегрирует контроль безопасности в процесс разработки без потери скорости релизов.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Stuffpoint Recruitment. Все права защищены.</p>
+    </footer>
+
+    <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+      <div class="modal-overlay" data-close-modal></div>
+      <div class="modal-panel" role="document">
+        <button class="modal-close" type="button" aria-label="Закрыть" data-close-modal>×</button>
+        <h2 id="modal-title">Оставьте заявку</h2>
+        <p>Ответим в течение одного рабочего дня.</p>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="Заявка по направлению DevOps" />
+          <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" />
+          <label>Имя<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Компания<input type="text" name="company" /></label>
+          <label>Сообщение<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

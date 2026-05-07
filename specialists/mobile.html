@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mobile специалисты — Stuffpoint Recruitment</title>
+    <meta name="description" content="Подбор mobile-разработчиков: iOS, Android, Flutter, React Native." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../landing.css" />
+  </head>
+  <body>
+    <div class="bg-layer" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="../index.html#hero">Stuffpoint Recruitment</a>
+      <nav class="topnav" aria-label="Навигация страницы">
+        <a href="../index.html#tracks">Все направления</a>
+        <a href="../index.html#contacts">Контакты</a>
+      </nav>
+      <button class="btn btn-small" type="button" data-open-modal>Связаться</button>
+    </header>
+
+    <main class="section specialist-page">
+      <a class="back-link" href="../index.html#tracks">← К направлениям</a>
+      <div class="page-intro reveal">
+        <p class="eyebrow">Mobile</p>
+        <h1>Mobile-разработчики для iOS, Android и кроссплатформы</h1>
+        <p class="lead">Подбираем инженеров под новые мобильные продукты и развитие существующих приложений.</p>
+      </div>
+
+      <section class="specialists-layout">
+        <article class="profile-card reveal">
+          <h2>Ирина Волкова</h2>
+          <p class="meta">Senior iOS Developer · 8 лет опыта · Москва</p>
+          <ul class="chip-list"><li>Swift</li><li>UIKit</li><li>SwiftUI</li><li>Combine</li></ul>
+          <p>Разрабатывала банковские и lifestyle приложения с высоким рейтингом в App Store.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Алексей Марков</h2>
+          <p class="meta">Android Developer · 7 лет опыта · Санкт-Петербург</p>
+          <ul class="chip-list"><li>Kotlin</li><li>Jetpack</li><li>Coroutines</li><li>Clean Architecture</li></ul>
+          <p>Сильный инженер для сложной бизнес-логики и повышения стабильности мобильных релизов.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Дарья Кононова</h2>
+          <p class="meta">Flutter Developer · 5 лет опыта · Тбилиси</p>
+          <ul class="chip-list"><li>Flutter</li><li>Dart</li><li>Firebase</li><li>Bloc</li></ul>
+          <p>Запускала кроссплатформенные MVP и продуктовые приложения с быстрым time-to-market.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Михаил Филимонов</h2>
+          <p class="meta">React Native Engineer · 6 лет опыта · Минск</p>
+          <ul class="chip-list"><li>React Native</li><li>TypeScript</li><li>Expo</li><li>CI/CD Mobile</li></ul>
+          <p>Закрывает full-cycle mobile delivery, умеет быстро выпускать и стабилизировать версии.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Тимур Нуриев</h2>
+          <p class="meta">Mobile Tech Lead · 10 лет опыта · Екатеринбург</p>
+          <ul class="chip-list"><li>iOS</li><li>Android</li><li>Architecture</li><li>Team Leadership</li></ul>
+          <p>Ведет мобильные команды, формирует roadmap по качеству, архитектуре и скорости поставки.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Stuffpoint Recruitment. Все права защищены.</p>
+    </footer>
+
+    <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+      <div class="modal-overlay" data-close-modal></div>
+      <div class="modal-panel" role="document">
+        <button class="modal-close" type="button" aria-label="Закрыть" data-close-modal>×</button>
+        <h2 id="modal-title">Оставьте заявку</h2>
+        <p>Ответим в течение одного рабочего дня.</p>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="Заявка по направлению Mobile" />
+          <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" />
+          <label>Имя<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Компания<input type="text" name="company" /></label>
+          <label>Сообщение<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

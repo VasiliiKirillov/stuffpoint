@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data & Analytics специалисты — Stuffpoint Recruitment</title>
+    <meta name="description" content="Подбор аналитиков и data-инженеров: BI, SQL, DWH, продуктовая аналитика." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../landing.css" />
+  </head>
+  <body>
+    <div class="bg-layer" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="../index.html#hero">Stuffpoint Recruitment</a>
+      <nav class="topnav" aria-label="Навигация страницы">
+        <a href="../index.html#tracks">Все направления</a>
+        <a href="../index.html#contacts">Контакты</a>
+      </nav>
+      <button class="btn btn-small" type="button" data-open-modal>Связаться</button>
+    </header>
+
+    <main class="section specialist-page">
+      <a class="back-link" href="../index.html#tracks">← К направлениям</a>
+      <div class="page-intro reveal">
+        <p class="eyebrow">Data & Analytics</p>
+        <h1>Аналитики и data-специалисты для роста продукта</h1>
+        <p class="lead">Подбираем профили для отчетности, BI, data-платформ и продуктовой аналитики.</p>
+      </div>
+
+      <section class="specialists-layout">
+        <article class="profile-card reveal">
+          <h2>София Елисеева</h2>
+          <p class="meta">Product Analyst · 6 лет опыта · Москва</p>
+          <ul class="chip-list"><li>SQL</li><li>Python</li><li>Amplitude</li><li>A/B Tests</li></ul>
+          <p>Работает с продуктовой воронкой и unit-экономикой, помогает командам принимать решения на данных.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Денис Муравьев</h2>
+          <p class="meta">BI Developer · 7 лет опыта · Санкт-Петербург</p>
+          <ul class="chip-list"><li>Power BI</li><li>ClickHouse</li><li>DAX</li><li>ETL</li></ul>
+          <p>Собирает управленческие дашборды, автоматизирует отчетность и снижает ручную нагрузку на команды.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Анна Швец</h2>
+          <p class="meta">Data Engineer · 8 лет опыта · Минск</p>
+          <ul class="chip-list"><li>Airflow</li><li>Spark</li><li>DWH</li><li>dbt</li></ul>
+          <p>Строит data-пайплайны и витрины данных для аналитики, маркетинга и ML-команд.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Руслан Журавлев</h2>
+          <p class="meta">Data Analyst · 5 лет опыта · Ереван</p>
+          <ul class="chip-list"><li>SQL</li><li>Tableau</li><li>Statistics</li><li>Forecasting</li></ul>
+          <p>Специализируется на операционной аналитике и построении моделей прогноза для бизнеса.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Ксения Островская</h2>
+          <p class="meta">Lead Analyst · 9 лет опыта · Тбилиси</p>
+          <ul class="chip-list"><li>Analytics Strategy</li><li>OKR</li><li>Data Governance</li><li>Mentoring</li></ul>
+          <p>Выстраивает аналитическую функцию и помогает командам внедрять data-driven подход.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Stuffpoint Recruitment. Все права защищены.</p>
+    </footer>
+
+    <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+      <div class="modal-overlay" data-close-modal></div>
+      <div class="modal-panel" role="document">
+        <button class="modal-close" type="button" aria-label="Закрыть" data-close-modal>×</button>
+        <h2 id="modal-title">Оставьте заявку</h2>
+        <p>Ответим в течение одного рабочего дня.</p>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="Заявка по направлению Data & Analytics" />
+          <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" />
+          <label>Имя<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Компания<input type="text" name="company" /></label>
+          <label>Сообщение<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

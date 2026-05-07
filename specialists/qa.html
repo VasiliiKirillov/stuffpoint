@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QA специалисты — Stuffpoint Recruitment</title>
+    <meta name="description" content="Подбор QA-инженеров: manual, automation, performance и API testing." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../landing.css" />
+  </head>
+  <body>
+    <div class="bg-layer" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="../index.html#hero">Stuffpoint Recruitment</a>
+      <nav class="topnav" aria-label="Навигация страницы">
+        <a href="../index.html#tracks">Все направления</a>
+        <a href="../index.html#contacts">Контакты</a>
+      </nav>
+      <button class="btn btn-small" type="button" data-open-modal>Связаться</button>
+    </header>
+
+    <main class="section specialist-page">
+      <a class="back-link" href="../index.html#tracks">← К направлениям</a>
+      <div class="page-intro reveal">
+        <p class="eyebrow">QA</p>
+        <h1>QA-специалисты для стабильных релизов</h1>
+        <p class="lead">Manual и automation профили, которые усиливают скорость и предсказуемость поставки.</p>
+      </div>
+
+      <section class="specialists-layout">
+        <article class="profile-card reveal">
+          <h2>Виктория Ларионова</h2>
+          <p class="meta">Senior QA Manual · 7 лет опыта · Москва</p>
+          <ul class="chip-list"><li>Manual Testing</li><li>Test Cases</li><li>Regression</li><li>UAT</li></ul>
+          <p>Вела QA-процессы в fintech и edtech, умеет быстро навести порядок в тестовой документации.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Роман Карпов</h2>
+          <p class="meta">QA Automation Engineer · 6 лет опыта · Минск</p>
+          <ul class="chip-list"><li>Java</li><li>Selenide</li><li>JUnit</li><li>Allure</li></ul>
+          <p>Запускал автотесты с нуля, интегрировал quality-gates в CI/CD пайплайны продуктовых команд.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Алина Нефедова</h2>
+          <p class="meta">QA Engineer · 5 лет опыта · Казань</p>
+          <ul class="chip-list"><li>API Testing</li><li>Postman</li><li>SQL</li><li>Charles</li></ul>
+          <p>Сильна в API и интеграционном тестировании, быстро находит причины нестабильных релизов.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Андрей Кузьмин</h2>
+          <p class="meta">Performance QA · 8 лет опыта · Санкт-Петербург</p>
+          <ul class="chip-list"><li>JMeter</li><li>k6</li><li>Grafana</li><li>Prometheus</li></ul>
+          <p>Проводит нагрузочные и стресс-тесты, помогает командам готовиться к пиковому трафику.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Елена Демина</h2>
+          <p class="meta">QA Lead · 9 лет опыта · Белград</p>
+          <ul class="chip-list"><li>QA Strategy</li><li>Mentoring</li><li>Risk-based QA</li><li>Release Control</li></ul>
+          <p>Выстраивает QA-стратегию на уровне продукта, синхронизирует разработку, аналитику и поддержку.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Stuffpoint Recruitment. Все права защищены.</p>
+    </footer>
+
+    <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+      <div class="modal-overlay" data-close-modal></div>
+      <div class="modal-panel" role="document">
+        <button class="modal-close" type="button" aria-label="Закрыть" data-close-modal>×</button>
+        <h2 id="modal-title">Оставьте заявку</h2>
+        <p>Ответим в течение одного рабочего дня.</p>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="Заявка по направлению QA" />
+          <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" />
+          <label>Имя<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Компания<input type="text" name="company" /></label>
+          <label>Сообщение<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

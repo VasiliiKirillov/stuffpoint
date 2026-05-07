@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Backend специалисты — Stuffpoint Recruitment</title>
+    <meta name="description" content="Подбор backend-разработчиков: Java, Python, Go, Node.js." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../landing.css" />
+  </head>
+  <body>
+    <div class="bg-layer" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="../index.html#hero">Stuffpoint Recruitment</a>
+      <nav class="topnav" aria-label="Навигация страницы">
+        <a href="../index.html#tracks">Все направления</a>
+        <a href="../index.html#contacts">Контакты</a>
+      </nav>
+      <button class="btn btn-small" type="button" data-open-modal>Связаться</button>
+    </header>
+
+    <main class="section specialist-page">
+      <a class="back-link" href="../index.html#tracks">← К направлениям</a>
+      <div class="page-intro reveal">
+        <p class="eyebrow">Backend</p>
+        <h1>Backend-инженеры для high-load и enterprise задач</h1>
+        <p class="lead">Подбор специалистов, которые умеют работать с надежностью, масштабом и безопасностью.</p>
+      </div>
+
+      <section class="specialists-layout">
+        <article class="profile-card reveal">
+          <h2>Никита Орлов</h2>
+          <p class="meta">Senior Java Developer · 9 лет опыта · Москва</p>
+          <ul class="chip-list"><li>Java</li><li>Spring Boot</li><li>Kafka</li><li>PostgreSQL</li></ul>
+          <p>Проектировал микросервисы для fintech, опыт с отказоустойчивыми системами и SLA 99.95%.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Егор Синицын</h2>
+          <p class="meta">Backend Go Developer · 6 лет опыта · Екатеринбург</p>
+          <ul class="chip-list"><li>Golang</li><li>gRPC</li><li>Redis</li><li>Kubernetes</li></ul>
+          <p>Разрабатывал платформенные сервисы и внутренние API с высокой пропускной способностью.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Ольга Чернова</h2>
+          <p class="meta">Python Backend Developer · 7 лет опыта · Тбилиси</p>
+          <ul class="chip-list"><li>Python</li><li>FastAPI</li><li>Celery</li><li>MongoDB</li></ul>
+          <p>Сильна в data-heavy продуктах, интеграциях и построении асинхронных пайплайнов обработки данных.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Максим Леонов</h2>
+          <p class="meta">Node.js Engineer · 5 лет опыта · Минск</p>
+          <ul class="chip-list"><li>Node.js</li><li>NestJS</li><li>TypeORM</li><li>RabbitMQ</li></ul>
+          <p>Делал backend для B2B SaaS, оптимизировал скорость релизов и качество API-документации.</p>
+        </article>
+        <article class="profile-card reveal">
+          <h2>Александр Гладких</h2>
+          <p class="meta">Backend Architect · 11 лет опыта · Санкт-Петербург</p>
+          <ul class="chip-list"><li>Architecture</li><li>DDD</li><li>Event-driven</li><li>Security</li></ul>
+          <p>Выстраивает архитектуру сложных платформ и помогает командам пройти этап активного масштабирования.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Stuffpoint Recruitment. Все права защищены.</p>
+    </footer>
+
+    <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+      <div class="modal-overlay" data-close-modal></div>
+      <div class="modal-panel" role="document">
+        <button class="modal-close" type="button" aria-label="Закрыть" data-close-modal>×</button>
+        <h2 id="modal-title">Оставьте заявку</h2>
+        <p>Ответим в течение одного рабочего дня.</p>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="Заявка по направлению Backend" />
+          <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" />
+          <label>Имя<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Компания<input type="text" name="company" /></label>
+          <label>Сообщение<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../main.js"></script>
+  </body>
+</html>
