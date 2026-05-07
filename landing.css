@@ -843,3 +843,302 @@ body {
     transition: none !important;
   }
 }
+
+/* ---------- Claude layout compatibility ---------- */
+.mark {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 0.65rem;
+  border: 1px solid var(--line-strong);
+  background: color-mix(in oklab, var(--brand) 65%, #111 35%);
+  vertical-align: baseline;
+}
+
+mark {
+  color: var(--brand);
+  background: transparent;
+  border-bottom: 0.085em solid currentColor;
+  padding-bottom: 0.02em;
+}
+
+.top-cta {
+  text-decoration: none;
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+  padding: 0.75rem 1.35rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.98rem;
+}
+
+.index-bar {
+  width: 100%;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(90deg, oklch(0.93 0.03 100) 0%, oklch(0.92 0.05 70) 100%);
+  padding: 1rem;
+  display: grid;
+  gap: 0.8rem;
+  color: #8a8a87;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.82rem;
+}
+
+.index-bar .label {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.grid12 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+
+.hero .grid12 h1 {
+  margin: 0;
+}
+
+.hero-meta {
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #8a8a87;
+  font-size: 0.86rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.hero-meta strong {
+  color: var(--text);
+}
+
+.hero-lede {
+  color: var(--text-2);
+  font-size: clamp(1rem, 1.9vw, 1.05rem);
+  margin: 0.2rem 0 0;
+}
+
+.hero .hero-actions {
+  margin: 0.8rem 0 0;
+}
+
+.note {
+  color: var(--text-2);
+  max-width: 38ch;
+}
+
+.svc-cards,
+.tracks,
+.cases,
+.contacts {
+  display: grid;
+  gap: 1.1rem;
+  margin-top: 1.6rem;
+}
+
+.svc-card,
+.track,
+.case,
+.contact {
+  background: var(--paper);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.55rem 1.5rem;
+}
+
+.svc-card .num,
+.track .id,
+.case .meta {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-family: "Space Grotesk", sans-serif;
+  color: #6e7049;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.svc-card h3,
+.track h3,
+.case h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  margin: 0.95rem 0 0.8rem;
+  font-size: clamp(2rem, 3.4vw, 2.7rem);
+  line-height: 1.1;
+}
+
+.svc-card p,
+.track .stack,
+.case p {
+  color: var(--text-2);
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.svc-card .price {
+  margin-top: 1rem;
+  display: block;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #8a8a87;
+}
+
+.track {
+  text-decoration: none;
+  color: inherit;
+}
+
+.track .count {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+  color: var(--text);
+}
+
+.track .arrow {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.case .row {
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.case .stat .v {
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.05;
+}
+
+.case .stat .l {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #8a8a87;
+}
+
+.cta {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, #18181a 0%, #232327 100%);
+  color: var(--bg);
+  padding: 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(500px 380px at 90% 20%, oklch(0.78 0.10 70 / 0.35), transparent 60%),
+    radial-gradient(440px 320px at 10% 90%, oklch(0.78 0.10 110 / 0.30), transparent 60%);
+}
+
+.cta > * {
+  position: relative;
+  z-index: 1;
+}
+
+.cta h2 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-weight: 500;
+  max-width: 20ch;
+}
+
+.cta p {
+  color: rgba(246, 243, 236, 0.78);
+  max-width: 40ch;
+  margin: 1rem 0 0;
+}
+
+.cta .btn {
+  margin-top: 1rem;
+  background: var(--bg);
+  border-color: var(--bg);
+  color: var(--text);
+}
+
+.contacts .contact {
+  border-top: 1px solid var(--line-strong);
+}
+
+.contact .l {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #8a8a87;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.82rem;
+}
+
+.contact .v {
+  margin-top: 0.9rem;
+  display: block;
+  font-size: clamp(1.2rem, 2.4vw, 2rem);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+@media (min-width: 760px) {
+  .index-bar {
+    grid-template-columns: 1.1fr repeat(5, 1fr);
+    align-items: center;
+  }
+
+  .grid12 {
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: end;
+  }
+
+  .grid12 h1,
+  .grid12 .hero-lede,
+  .grid12 .hero-actions {
+    grid-column: 1;
+  }
+
+  .grid12 .hero-meta {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: center;
+    justify-self: end;
+    text-align: left;
+  }
+
+  .svc-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tracks {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cases {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contacts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

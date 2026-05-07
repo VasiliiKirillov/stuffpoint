@@ -20,320 +20,296 @@
     <div class="bg-layer" aria-hidden="true"></div>
 
     <header class="topbar">
-      <a class="brand" href="#hero">Stuffpoint</a>
-      <nav class="topnav" aria-label="Основная навигация">
+      <a class="brand" href="#"><span class="mark"></span>Stuffpoint</a>
+      <nav class="topnav">
         <a href="#services">Услуги</a>
-        <a href="#process">Воронка</a>
+        <a href="#funnel">Воронка</a>
         <a href="#tracks">Направления</a>
-        <a href="#proof">Кейсы</a>
+        <a href="#cases">Кейсы</a>
         <a href="#contacts">Контакты</a>
       </nav>
-      <button class="btn btn-small" type="button" data-open-modal>Связаться →</button>
+      <a class="top-cta" href="#contacts">Связаться →</a>
     </header>
 
-    <main>
-      <section id="hero" class="hero section">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Кадровое агентство</p>
-          <h1>Подбор IT и digital специалистов <span class="hl">без пауз</span> в найме.</h1>
-          <p class="lead">
-            Точечный подбор middle/senior, лидов и редких ролей под бизнес-задачи. От
-            первого брифа до оффера и выхода в команду.
-          </p>
-          <div class="hero-actions">
-            <button class="btn" type="button" data-open-modal>Обсудить найм →</button>
-            <a class="btn btn-ghost" href="#tracks">Смотреть специалистов</a>
+    <div class="index-bar">
+      <span class="label">Index</span>
+      <span>01 · Услуги</span>
+      <span>02 · Воронка</span>
+      <span>03 · Направления</span>
+      <span>04 · Кейсы</span>
+      <span>05 · Контакты</span>
+    </div>
+
+    <section class="hero" id="hero">
+      <div class="grid12 section">
+        <h1>Подбор IT&nbsp;и digital специалистов <mark>без пауз</mark> в найме.</h1>
+        <div class="hero-meta">
+          <div><strong>Кадровое агентство</strong></div>
+          <div>с 2021 · Москва · СНГ</div>
+          <div>обновлено · май 2026</div>
+        </div>
+        <p class="hero-lede">Точечный подбор middle/senior, лидов и редких ролей под бизнес-задачи. От первого брифа до выхода в команду.</p>
+        <div class="hero-actions">
+          <button class="btn" type="button" data-open-modal>Обсудить найм →</button>
+          <a class="btn btn-ghost" href="#tracks">Смотреть специалистов</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="kpis">
+      <div class="kpi-grid">
+        <div class="kpi">
+          <span class="label">01 · закрытые роли</span>
+          <span class="v">420<sup>+</sup></span>
+        </div>
+        <div class="kpi">
+          <span class="label">02 · до интервью</span>
+          <span class="v">12<sup>дн</sup></span>
+        </div>
+        <div class="kpi">
+          <span class="label">03 · accept rate</span>
+          <span class="v">91<sup>%</sup></span>
+        </div>
+        <div class="kpi">
+          <span class="label">04 · первые резюме</span>
+          <span class="v">3–5<sup>дн</sup></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <header class="section-head">
+        <span class="id">01 — Услуги</span>
+        <h2>Три формата подбора <mark>под темп</mark> вашей компании.</h2>
+        <p class="note">Оплата по факту, по подписке или по часам аудита — зависит от формата.</p>
+      </header>
+
+      <div class="svc-cards">
+        <article class="svc-card">
+          <span class="num">01 · Pay per hire</span>
+          <h3>Точечный подбор</h3>
+          <p>Закрываем критичные позиции: backend, frontend, mobile, DevOps, data, product, QA, team lead, C-level.</p>
+          <span class="price">Оплата по факту выхода</span>
+        </article>
+        <article class="svc-card">
+          <span class="num">02 · Subscription</span>
+          <h3>Recruitment-as-a-Service</h3>
+          <p>Выделенная команда рекрутеров и ресерчеров масштабирует найм на период роста или запуска направления.</p>
+          <span class="price">Месячная подписка</span>
+        </article>
+        <article class="svc-card">
+          <span class="num">03 · Hourly</span>
+          <h3>Аудит найма</h3>
+          <p>Анализируем воронку, EVP и коммуникации с кандидатами, чтобы убрать потери на каждом этапе.</p>
+          <span class="price">Почасовая оплата</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="funnel" class="section">
+      <header class="section-head">
+        <span class="id">02 — Воронка</span>
+        <h2>Понятный процесс — <mark>четыре этапа</mark>, без сюрпризов.</h2>
+        <p class="note">Реальные средние из последних 32 закрытых ролей.</p>
+      </header>
+
+      <div class="funnel-block">
+        <div class="funnel-svg-wrap">
+          <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:Space Grotesk;">
+            <g>
+              <rect x="0" y="40" width="560" height="40" fill="none" stroke="#18181a" stroke-width="1"></rect>
+              <rect x="0" y="40" width="560" height="40" fill="oklch(0.92 0.03 110)"></rect>
+              <text x="12" y="65" font-size="13" font-weight="500" fill="#18181a">220 · скрининг</text>
+              <text x="548" y="65" font-size="11" text-anchor="end" fill="#8a8a87">DAY 0–5</text>
+
+              <rect x="0" y="100" width="380" height="40" fill="none" stroke="#18181a" stroke-width="1"></rect>
+              <rect x="0" y="100" width="380" height="40" fill="oklch(0.86 0.05 110)"></rect>
+              <text x="12" y="125" font-size="13" font-weight="500" fill="#18181a">86 · техинтервью</text>
+              <text x="368" y="125" font-size="11" text-anchor="end" fill="#8a8a87">DAY 5–9</text>
+
+              <rect x="0" y="160" width="180" height="40" fill="none" stroke="#18181a" stroke-width="1"></rect>
+              <rect x="0" y="160" width="180" height="40" fill="oklch(0.78 0.07 110)"></rect>
+              <text x="12" y="185" font-size="13" font-weight="500" fill="#18181a">24 · финал</text>
+              <text x="168" y="185" font-size="11" text-anchor="end" fill="#fafaf7">DAY 12</text>
+
+              <rect x="0" y="220" width="60" height="40" fill="oklch(0.52 0.06 110)" stroke="#18181a" stroke-width="1"></rect>
+              <text x="72" y="245" font-size="13" font-weight="500" fill="#18181a">3 · оффер</text>
+              <text x="200" y="245" font-size="11" fill="#8a8a87">DAY 18</text>
+
+              <rect x="0" y="280" width="20" height="40" fill="#18181a"></rect>
+              <text x="32" y="305" font-size="13" font-weight="500" fill="#18181a">1 · hire</text>
+              <text x="200" y="305" font-size="11" fill="#8a8a87">DAY 22 · accept 91%</text>
+            </g>
+            <text x="0" y="20" font-size="11" letter-spacing="2" fill="#8a8a87">FUNNEL · СРЕДНЕЕ ПО 32 РОЛЯМ</text>
+          </svg>
+        </div>
+
+        <div class="funnel-side">
+          <ol>
+            <li>
+              <span class="num">01</span>
+              <div>
+                <h4>Бриф и портрет кандидата</h4>
+                <p>Бизнес-контекст, стек, цели роли, критерии успеха в первые 3–6 месяцев.</p>
+                <span class="day">Day 0</span>
+              </div>
+            </li>
+            <li>
+              <span class="num">02</span>
+              <div>
+                <h4>Поиск и скрининг</h4>
+                <p>База, прямой поиск, рекомендации. Передаём только релевантные профили.</p>
+                <span class="day">Day 0–5</span>
+              </div>
+            </li>
+            <li>
+              <span class="num">03</span>
+              <div>
+                <h4>Интервью и калибровка</h4>
+                <p>Собираем фидбэк и оперативно уточняем профиль, чтобы ускорить выход на оффер.</p>
+                <span class="day">Day 5–12</span>
+              </div>
+            </li>
+            <li>
+              <span class="num">04</span>
+              <div>
+                <h4>Оффер и сопровождение</h4>
+                <p>Помогаем с переговорной стратегией и удерживаем кандидата до первого рабочего дня.</p>
+                <span class="day">Day 12–22</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracks" class="section">
+      <header class="section-head">
+        <span class="id">03 — Направления</span>
+        <h2>Шесть стеков. <mark>Реальные люди</mark> на странице каждого.</h2>
+        <p class="note">5 живых профилей в каждом направлении, обновлено в этом месяце.</p>
+      </header>
+
+      <div class="tracks">
+        <a class="track" href="specialists/frontend.html">
+          <span class="id">01 · Frontend</span>
+          <h3>Frontend</h3>
+          <span class="stack">React · Vue · TypeScript · Next.js</span>
+          <span class="count">5 специалистов <span class="arrow">→</span></span>
+        </a>
+        <a class="track" href="specialists/backend.html">
+          <span class="id">02 · Backend</span>
+          <h3>Backend</h3>
+          <span class="stack">Java · Python · Node.js · Go</span>
+          <span class="count">5 специалистов <span class="arrow">→</span></span>
+        </a>
+        <a class="track" href="specialists/qa.html">
+          <span class="id">03 · QA</span>
+          <h3>QA</h3>
+          <span class="stack">Manual · Automation · API / E2E</span>
+          <span class="count">5 специалистов <span class="arrow">→</span></span>
+        </a>
+        <a class="track" href="specialists/devops.html">
+          <span class="id">04 · DevOps</span>
+          <h3>DevOps &amp; SRE</h3>
+          <span class="stack">AWS · Yandex Cloud · Kubernetes · CI/CD</span>
+          <span class="count">5 специалистов <span class="arrow">→</span></span>
+        </a>
+        <a class="track" href="specialists/mobile.html">
+          <span class="id">05 · Mobile</span>
+          <h3>Mobile</h3>
+          <span class="stack">iOS · Android · Flutter · React Native</span>
+          <span class="count">5 специалистов <span class="arrow">→</span></span>
+        </a>
+        <a class="track" href="specialists/analytics.html">
+          <span class="id">06 · Data</span>
+          <h3>Data &amp; Analytics</h3>
+          <span class="stack">Data Analyst · BI · Data Engineering</span>
+          <span class="count">5 специалистов <span class="arrow">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="cases" class="section">
+      <header class="section-head">
+        <span class="id">04 — Кейсы</span>
+        <h2>Почему с нами <mark>остаются</mark> надолго.</h2>
+        <p class="note">Анонимизированные результаты последних 12 месяцев.</p>
+      </header>
+
+      <div class="cases">
+        <article class="case">
+          <span class="meta">Fintech · серия найма ×9</span>
+          <h3>За 8 недель закрыли 9 ролей и ускорили найм вдвое.</h3>
+          <p>Java, QA Auto, DevOps, Product Analyst. Сократили time-to-hire с 63 до 29 дней.</p>
+          <div class="row">
+            <div class="stat"><span class="v">9</span><span class="l">ролей за 8 нед</span></div>
+            <div class="stat"><span class="v">−54%</span><span class="l">time-to-hire</span></div>
           </div>
-          <ul class="hero-points" role="list">
-            <li>Первые релевантные резюме за 3–5 рабочих дней</li>
-            <li>Фокус на IT, product, analytics и management ролях</li>
-            <li>Прозрачная воронка и еженедельная отчетность</li>
-          </ul>
-        </div>
-        <div class="hero-metrics reveal">
-          <article>
-            <h2>420+</h2>
-            <p>закрытых ролей за последние 24 месяца</p>
-          </article>
-          <article>
-            <h2>12 дней</h2>
-            <p>средний срок до первого интервью с релевантным кандидатом</p>
-          </article>
-          <article>
-            <h2>91%</h2>
-            <p>офферов принимаются кандидатами</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="kpis">
-        <div class="kpi-grid">
-          <div class="kpi reveal">
-            <span class="label">01 · закрытые роли</span>
-            <span class="v">420<sup>+</sup></span>
+        </article>
+        <article class="case">
+          <span class="meta">eCommerce · MVP</span>
+          <h3>Core-команда из шести человек под запуск продукта.</h3>
+          <p>Frontend, backend, дизайнер, PM, QA. Собрали состав за один спринт.</p>
+          <div class="row">
+            <div class="stat"><span class="v">6</span><span class="l">найм за 5 нед</span></div>
+            <div class="stat"><span class="v">100%</span><span class="l">probation pass</span></div>
           </div>
-          <div class="kpi reveal">
-            <span class="label">02 · до интервью</span>
-            <span class="v">12<sup>дн</sup></span>
+        </article>
+        <article class="case">
+          <span class="meta">Узкие роли</span>
+          <h3>ML, SRE, архитекторы и cybersecurity.</h3>
+          <p>Работаем с редкими направлениями, к которым обычно нет очереди.</p>
+          <div class="row">
+            <div class="stat"><span class="v">31</span><span class="l">редких ролей</span></div>
+            <div class="stat"><span class="v">3</span><span class="l">страны поиска</span></div>
           </div>
-          <div class="kpi reveal">
-            <span class="label">03 · accept rate</span>
-            <span class="v">91<sup>%</sup></span>
+        </article>
+        <article class="case">
+          <span class="meta">Процесс · weekly sync</span>
+          <h3>Прозрачная воронка и отчёт каждую неделю.</h3>
+          <p>Синки по гипотезам и конверсии — прогресс в цифрах, а не в обещаниях.</p>
+          <div class="row">
+            <div class="stat"><span class="v">7</span><span class="l">метрик в отчёте</span></div>
+            <div class="stat"><span class="v">24ч</span><span class="l">SLA на ответ</span></div>
           </div>
-          <div class="kpi reveal">
-            <span class="label">04 · первые резюме</span>
-            <span class="v">3–5<sup>дн</sup></span>
-          </div>
-        </div>
-      </section>
+        </article>
+      </div>
+    </section>
 
-      <section id="services" class="section">
-        <div class="section-head reveal">
-          <span class="id">01 — Услуги</span>
-          <p class="eyebrow">Форматы</p>
-          <h2>Три формата подбора <span class="hl">под темп</span> вашей компании.</h2>
-        </div>
-        <div class="grid cards-3">
-          <article class="card reveal">
-            <h3>Точечный подбор</h3>
-            <p>
-              Закрываем критичные позиции: backend/frontend/mobile, DevOps, data, product, QA, team
-              lead, C-level.
-            </p>
-          </article>
-          <article class="card reveal">
-            <h3>Recruitment-as-a-Service</h3>
-            <p>
-              Выделенная команда рекрутеров и ресерчеров масштабирует найм на период роста или запуска
-              направления.
-            </p>
-          </article>
-          <article class="card reveal">
-            <h3>Аудит найма</h3>
-            <p>
-              Анализируем воронку подбора, EVP и коммуникации с кандидатами, чтобы убрать потери на
-              каждом этапе.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="tracks" class="section">
-        <div class="section-head reveal">
-          <span class="id">02 — Направления</span>
-          <p class="eyebrow">Стек и роли</p>
-          <h2>Шесть стеков. <span class="hl">Реальные люди</span> на странице каждого.</h2>
-        </div>
-        <div class="specialty-grid">
-          <article class="specialty-card reveal">
-            <h3>Frontend</h3>
-            <ul>
-              <li>React</li>
-              <li>Vue</li>
-              <li>TypeScript</li>
-              <li>Next.js</li>
-            </ul>
-            <a href="specialists/frontend.html">Смотреть 5 специалистов</a>
-          </article>
-          <article class="specialty-card reveal">
-            <h3>Backend</h3>
-            <ul>
-              <li>Java</li>
-              <li>Python</li>
-              <li>Node.js</li>
-              <li>Go</li>
-            </ul>
-            <a href="specialists/backend.html">Смотреть 5 специалистов</a>
-          </article>
-          <article class="specialty-card reveal">
-            <h3>QA</h3>
-            <ul>
-              <li>Manual</li>
-              <li>Automation</li>
-              <li>API / E2E</li>
-            </ul>
-            <a href="specialists/qa.html">Смотреть 5 специалистов</a>
-          </article>
-          <article class="specialty-card reveal">
-            <h3>DevOps & SRE</h3>
-            <ul>
-              <li>AWS / Yandex Cloud</li>
-              <li>Kubernetes</li>
-              <li>CI/CD</li>
-            </ul>
-            <a href="specialists/devops.html">Смотреть 5 специалистов</a>
-          </article>
-          <article class="specialty-card reveal">
-            <h3>Mobile</h3>
-            <ul>
-              <li>iOS</li>
-              <li>Android</li>
-              <li>Flutter</li>
-              <li>React Native</li>
-            </ul>
-            <a href="specialists/mobile.html">Смотреть 5 специалистов</a>
-          </article>
-          <article class="specialty-card reveal">
-            <h3>Data & Analytics</h3>
-            <ul>
-              <li>Data Analyst</li>
-              <li>BI</li>
-              <li>Data Engineering</li>
-            </ul>
-            <a href="specialists/analytics.html">Смотреть 5 специалистов</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="process" class="section">
-        <div class="section-head reveal">
-          <span class="id">03 — Воронка</span>
-          <p class="eyebrow">Процесс</p>
-          <h2>Понятный процесс — <span class="hl">четыре этапа</span>, без сюрпризов</h2>
-          <p class="lead" style="margin-top:0.7rem;">Реальные средние из последних 32 закрытых ролей.</p>
-        </div>
-
-        <div class="funnel-block">
-          <div class="funnel-svg-wrap">
-            <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:Space Grotesk;">
-              <g>
-                <rect x="0" y="40" width="560" height="40" fill="none" stroke="#18181a" stroke-width="1"/>
-                <rect x="0" y="40" width="560" height="40" fill="oklch(0.92 0.03 110)"/>
-                <text x="12" y="65" font-size="13" font-weight="500" fill="#18181a">220 · скрининг</text>
-                <text x="548" y="65" font-size="11" text-anchor="end" fill="#8a8a87">DAY 0–5</text>
-
-                <rect x="0" y="100" width="380" height="40" fill="none" stroke="#18181a" stroke-width="1"/>
-                <rect x="0" y="100" width="380" height="40" fill="oklch(0.86 0.05 110)"/>
-                <text x="12" y="125" font-size="13" font-weight="500" fill="#18181a">86 · техинтервью</text>
-                <text x="368" y="125" font-size="11" text-anchor="end" fill="#8a8a87">DAY 5–9</text>
-
-                <rect x="0" y="160" width="180" height="40" fill="none" stroke="#18181a" stroke-width="1"/>
-                <rect x="0" y="160" width="180" height="40" fill="oklch(0.78 0.07 110)"/>
-                <text x="12" y="185" font-size="13" font-weight="500" fill="#18181a">24 · финал</text>
-                <text x="168" y="185" font-size="11" text-anchor="end" fill="#fafaf7">DAY 12</text>
-
-                <rect x="0" y="220" width="60" height="40" fill="oklch(0.52 0.06 110)" stroke="#18181a" stroke-width="1"/>
-                <text x="72" y="245" font-size="13" font-weight="500" fill="#18181a">3 · оффер</text>
-                <text x="200" y="245" font-size="11" fill="#8a8a87">DAY 18</text>
-
-                <rect x="0" y="280" width="20" height="40" fill="#18181a"/>
-                <text x="32" y="305" font-size="13" font-weight="500" fill="#18181a">1 · hire</text>
-                <text x="200" y="305" font-size="11" fill="#8a8a87">DAY 22 · accept 91%</text>
-              </g>
-              <text x="0" y="20" font-size="11" letter-spacing="2" fill="#8a8a87">FUNNEL · СРЕДНЕЕ ПО 32 РОЛЯМ</text>
-            </svg>
-          </div>
-
-          <div class="funnel-side">
-            <ol>
-              <li>
-                <span class="num">01</span>
-                <div>
-                  <h4>Бриф и портрет кандидата</h4>
-                  <p>Бизнес-контекст, стек, цели роли, критерии успеха в первые 3–6 месяцев.</p>
-                  <span class="day">Day 0</span>
-                </div>
-              </li>
-              <li>
-                <span class="num">02</span>
-                <div>
-                  <h4>Поиск и скрининг</h4>
-                  <p>База, прямой поиск, рекомендации. Передаём только релевантные профили.</p>
-                  <span class="day">Day 0–5</span>
-                </div>
-              </li>
-              <li>
-                <span class="num">03</span>
-                <div>
-                  <h4>Интервью и калибровка</h4>
-                  <p>Собираем фидбэк и оперативно уточняем профиль, чтобы ускорить выход на оффер.</p>
-                  <span class="day">Day 5–12</span>
-                </div>
-              </li>
-              <li>
-                <span class="num">04</span>
-                <div>
-                  <h4>Оффер и сопровождение</h4>
-                  <p>Помогаем с переговорной стратегией и удерживаем кандидата до первого рабочего дня.</p>
-                  <span class="day">Day 12–22</span>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </section>
-
-      <section id="proof" class="section">
-        <div class="section-head reveal">
-          <span class="id">04 — Кейсы</span>
-          <p class="eyebrow">Кейсы</p>
-          <h2>Почему с нами <span class="hl">остаются</span> надолго</h2>
-        </div>
-        <div class="grid cards-2">
-          <article class="card card-accent reveal">
-            <h3>FINTECH · СЕРИЯ НАЙМА ×9</h3>
-            <p>
-              За 8 недель закрыли 9 ролей и ускорили найм вдвое.
-            </p>
-            <p>Java, QA Auto, DevOps, Product Analyst. Сократили time-to-hire с 63 до 29 дней.</p>
-          </article>
-          <article class="card card-accent reveal">
-            <h3>ECOMMERCE · MVP</h3>
-            <p>
-              Core-команда из шести человек под запуск продукта.
-            </p>
-            <p>Frontend, backend, дизайнер, PM, QA. Собрали состав за один спринт.</p>
-          </article>
-          <article class="card reveal">
-            <h3>УЗКИЕ РОЛИ</h3>
-            <p>ML, SRE, архитекторы и cybersecurity.</p>
-            <p>Работаем с редкими направлениями, к которым обычно нет очереди.</p>
-          </article>
-          <article class="card reveal">
-            <h3>ПРОЦЕСС · WEEKLY SYNC</h3>
-            <p>Прозрачная воронка и отчёт каждую неделю.</p>
-            <p>Синки по гипотезам и конверсии — прогресс в цифрах, а не в обещаниях.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-cta reveal">
-        <div>
-          <p class="eyebrow">Готовы ускорить найм?</p>
-          <h2>Обсудим ваши вакансии и дадим <span class="hl">реалистичный план</span> закрытия.</h2>
-          <p>
-            Покажем сроки, каналы поиска и требования к профилю ещё до старта работы. Без лишних встреч и
-            теории.
-          </p>
-        </div>
+    <section class="cta">
+      <h2>Обсудим ваши вакансии и дадим <mark>реалистичный план</mark> закрытия.</h2>
+      <p>Покажем сроки, каналы поиска и требования к профилю ещё до старта работы. Без лишних встреч и теории.</p>
+      <div class="cta-action">
         <button class="btn" type="button" data-open-modal>Оставить заявку →</button>
-      </section>
+      </div>
+    </section>
 
-      <section id="contacts" class="section contacts">
-        <div class="section-head reveal">
-          <span class="id">05 — Контакты</span>
-          <p class="eyebrow">Контакты</p>
-          <h2>На связи в рабочее время и в <span class="hl">срочных кейсах</span>.</h2>
+    <section id="contacts" class="section">
+      <header class="section-head">
+        <span class="id">05 — Контакты</span>
+        <h2>На связи в рабочее время и в <mark>срочных кейсах</mark>.</h2>
+        <p class="note">Отвечаем в течение одного рабочего дня.</p>
+      </header>
+      <div class="contacts">
+        <div class="contact">
+          <span class="l">Email</span>
+          <span class="v">hello@stuffpoint.agency</span>
         </div>
-        <div class="contacts-grid">
-          <article class="card reveal">
-            <h3>Email</h3>
-            <a href="mailto:hello@stuffpoint.agency">hello@stuffpoint.agency</a>
-          </article>
-          <article class="card reveal">
-            <h3>Телефон</h3>
-            <a href="tel:+79990000000">+7 (999) 000-00-00</a>
-          </article>
-          <article class="card reveal">
-            <h3>География</h3>
-            <p>Россия · СНГ · Remote</p>
-          </article>
+        <div class="contact">
+          <span class="l">Телефон</span>
+          <span class="v">+7 (999) 000-00-00</span>
         </div>
-      </section>
-    </main>
+        <div class="contact">
+          <span class="l">География</span>
+          <span class="v">Россия · СНГ · Remote</span>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Stuffpoint. Все права защищены.</p>
+      <span>© <span id="year"></span> · Stuffpoint Recruitment</span>
+      <span>v.04 · 05.2026</span>
     </footer>
 
     <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
