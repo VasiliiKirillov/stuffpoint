@@ -20,25 +20,16 @@
     <div class="bg-layer" aria-hidden="true"></div>
 
     <header class="topbar">
-      <a class="brand" href="#"><span class="mark"></span>Stuffpoint</a>
-      <nav class="topnav">
+      <a class="brand" href="#hero">Stuffpoint</a>
+      <nav class="topnav" aria-label="Основная навигация">
         <a href="#services">Услуги</a>
-        <a href="#funnel">Воронка</a>
+        <a href="#process">Воронка</a>
         <a href="#tracks">Направления</a>
-        <a href="#cases">Кейсы</a>
+        <a href="#proof">Кейсы</a>
         <a href="#contacts">Контакты</a>
       </nav>
-      <a class="top-cta" href="#contacts">Связаться →</a>
+      <button class="btn btn-small" type="button" data-open-modal>Связаться →</button>
     </header>
-
-    <div class="index-bar">
-      <span class="label">Index</span>
-      <span>01 · Услуги</span>
-      <span>02 · Воронка</span>
-      <span>03 · Направления</span>
-      <span>04 · Кейсы</span>
-      <span>05 · Контакты</span>
-    </div>
 
     <section class="hero" id="hero">
       <div class="grid12 section">
@@ -106,7 +97,7 @@
       </div>
     </section>
 
-    <section id="funnel" class="section">
+    <section id="process" class="section">
       <header class="section-head">
         <span class="id">02 — Воронка</span>
         <h2>Понятный процесс — <mark>четыре этапа</mark>, без сюрпризов.</h2>
@@ -230,7 +221,7 @@
       </div>
     </section>
 
-    <section id="cases" class="section">
+    <section id="proof" class="section">
       <header class="section-head">
         <span class="id">04 — Кейсы</span>
         <h2>Почему с нами <mark>остаются</mark> надолго.</h2>
@@ -285,31 +276,30 @@
       </div>
     </section>
 
-    <section id="contacts" class="section">
-      <header class="section-head">
+    <section id="contacts" class="section contacts">
+      <div class="section-head reveal">
         <span class="id">05 — Контакты</span>
-        <h2>На связи в рабочее время и в <mark>срочных кейсах</mark>.</h2>
-        <p class="note">Отвечаем в течение одного рабочего дня.</p>
-      </header>
-      <div class="contacts">
-        <div class="contact">
-          <span class="l">Email</span>
-          <span class="v">hello@stuffpoint.agency</span>
-        </div>
-        <div class="contact">
-          <span class="l">Телефон</span>
-          <span class="v">+7 (999) 000-00-00</span>
-        </div>
-        <div class="contact">
-          <span class="l">География</span>
-          <span class="v">Россия · СНГ · Remote</span>
-        </div>
+        <p class="eyebrow">Контакты</p>
+        <h2>На связи в рабочее время и в <span class="hl">срочных кейсах</span>.</h2>
+      </div>
+      <div class="contacts-grid">
+        <article class="card reveal">
+          <h3>Email</h3>
+          <a href="mailto:hello@stuffpoint.agency">hello@stuffpoint.agency</a>
+        </article>
+        <article class="card reveal">
+          <h3>Телефон</h3>
+          <a href="tel:+79990000000">+7 (999) 000-00-00</a>
+        </article>
+        <article class="card reveal">
+          <h3>География</h3>
+          <p>Россия · СНГ · Remote</p>
+        </article>
       </div>
     </section>
 
     <footer class="footer">
-      <span>© <span id="year"></span> · Stuffpoint Recruitment</span>
-      <span>v.04 · 05.2026</span>
+      <p>© <span id="year"></span> Stuffpoint. Все права защищены.</p>
     </footer>
 
     <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
