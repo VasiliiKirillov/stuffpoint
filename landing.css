@@ -363,6 +363,12 @@ body {
   line-height: 1.1;
 }
 
+.hl {
+  color: var(--brand);
+  border-bottom: 0.085em solid currentColor;
+  padding-bottom: 0.02em;
+}
+
 /* ── Карточки общие ─────────────────── */
 .grid {
   display: grid;
@@ -492,6 +498,9 @@ body {
   max-width: 50ch;
 }
 .section-cta .eyebrow {
+  color: oklch(0.78 0.12 110);
+}
+.section-cta .hl {
   color: oklch(0.78 0.12 110);
 }
 .section-cta .btn {
