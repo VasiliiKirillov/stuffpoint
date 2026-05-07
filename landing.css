@@ -971,23 +971,12 @@ mark {
   line-height: 1.1;
 }
 
-/* Кейсы в макете заметно компактнее, чем услуги/направления */
-.case h3 {
-  font-size: clamp(1.35rem, 2vw, 2.2rem);
-  line-height: 1.12;
-}
-
 .svc-card p,
 .track .stack,
 .case p {
   color: var(--text-2);
   margin: 0;
   font-size: 1.05rem;
-}
-
-.case p {
-  font-size: 0.93rem;
-  line-height: 1.45;
 }
 
 .svc-card .price {
