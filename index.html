@@ -66,8 +66,30 @@
         </div>
       </section>
 
+      <section class="kpis">
+        <div class="kpi-grid">
+          <div class="kpi reveal">
+            <span class="label">01 · закрытые роли</span>
+            <span class="v">420<sup>+</sup></span>
+          </div>
+          <div class="kpi reveal">
+            <span class="label">02 · до интервью</span>
+            <span class="v">12<sup>дн</sup></span>
+          </div>
+          <div class="kpi reveal">
+            <span class="label">03 · accept rate</span>
+            <span class="v">91<sup>%</sup></span>
+          </div>
+          <div class="kpi reveal">
+            <span class="label">04 · первые резюме</span>
+            <span class="v">3–5<sup>дн</sup></span>
+          </div>
+        </div>
+      </section>
+
       <section id="services" class="section">
         <div class="section-head reveal">
+          <span class="id">01 — Услуги</span>
           <p class="eyebrow">Что делаем</p>
           <h2>Форматы подбора под темп вашей компании</h2>
         </div>
@@ -98,6 +120,7 @@
 
       <section id="tracks" class="section">
         <div class="section-head reveal">
+          <span class="id">02 — Направления</span>
           <p class="eyebrow">Направления</p>
           <h2>Выберите стек и откройте страницу со специалистами</h2>
         </div>
@@ -161,43 +184,85 @@
 
       <section id="process" class="section">
         <div class="section-head reveal">
+          <span class="id">03 — Воронка</span>
           <p class="eyebrow">Как работаем</p>
-          <h2>Понятный процесс без сюрпризов</h2>
+          <h2>Понятный процесс — четыре этапа, без сюрпризов</h2>
+          <p class="lead" style="margin-top:0.7rem;">Реальные средние из последних 32 закрытых ролей.</p>
         </div>
-        <ol class="timeline" role="list">
-          <li class="reveal">
-            <span>01</span>
-            <div>
-              <h3>Бриф и портрет кандидата</h3>
-              <p>Фиксируем бизнес-контекст, стек, цели роли и критерии успеха в первые 3-6 месяцев.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span>02</span>
-            <div>
-              <h3>Поиск и первичный скрининг</h3>
-              <p>Используем базу, прямой поиск и рекомендации. Передаем только релевантные профили.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span>03</span>
-            <div>
-              <h3>Интервью и калибровка</h3>
-              <p>Собираем обратную связь и оперативно уточняем профиль, чтобы ускорить выход на оффер.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span>04</span>
-            <div>
-              <h3>Оффер и сопровождение выхода</h3>
-              <p>Помогаем с переговорной стратегией и удерживаем кандидата до первого рабочего дня.</p>
-            </div>
-          </li>
-        </ol>
+
+        <div class="funnel-block">
+          <div class="funnel-svg-wrap">
+            <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:Space Grotesk;">
+              <g>
+                <rect x="0" y="40" width="560" height="40" fill="none" stroke="#18181a" stroke-width="1"/>
+                <rect x="0" y="40" width="560" height="40" fill="oklch(0.92 0.03 110)"/>
+                <text x="12" y="65" font-size="13" font-weight="500" fill="#18181a">220 · скрининг</text>
+                <text x="548" y="65" font-size="11" text-anchor="end" fill="#8a8a87">DAY 0–5</text>
+
+                <rect x="0" y="100" width="380" height="40" fill="none" stroke="#18181a" stroke-width="1"/>
+                <rect x="0" y="100" width="380" height="40" fill="oklch(0.86 0.05 110)"/>
+                <text x="12" y="125" font-size="13" font-weight="500" fill="#18181a">86 · техинтервью</text>
+                <text x="368" y="125" font-size="11" text-anchor="end" fill="#8a8a87">DAY 5–9</text>
+
+                <rect x="0" y="160" width="180" height="40" fill="none" stroke="#18181a" stroke-width="1"/>
+                <rect x="0" y="160" width="180" height="40" fill="oklch(0.78 0.07 110)"/>
+                <text x="12" y="185" font-size="13" font-weight="500" fill="#18181a">24 · финал</text>
+                <text x="168" y="185" font-size="11" text-anchor="end" fill="#fafaf7">DAY 12</text>
+
+                <rect x="0" y="220" width="60" height="40" fill="oklch(0.52 0.06 110)" stroke="#18181a" stroke-width="1"/>
+                <text x="72" y="245" font-size="13" font-weight="500" fill="#18181a">3 · оффер</text>
+                <text x="200" y="245" font-size="11" fill="#8a8a87">DAY 18</text>
+
+                <rect x="0" y="280" width="20" height="40" fill="#18181a"/>
+                <text x="32" y="305" font-size="13" font-weight="500" fill="#18181a">1 · hire</text>
+                <text x="200" y="305" font-size="11" fill="#8a8a87">DAY 22 · accept 91%</text>
+              </g>
+              <text x="0" y="20" font-size="11" letter-spacing="2" fill="#8a8a87">FUNNEL · СРЕДНЕЕ ПО 32 РОЛЯМ</text>
+            </svg>
+          </div>
+
+          <div class="funnel-side">
+            <ol>
+              <li>
+                <span class="num">01</span>
+                <div>
+                  <h4>Бриф и портрет кандидата</h4>
+                  <p>Бизнес-контекст, стек, цели роли, критерии успеха в первые 3–6 месяцев.</p>
+                  <span class="day">Day 0</span>
+                </div>
+              </li>
+              <li>
+                <span class="num">02</span>
+                <div>
+                  <h4>Поиск и скрининг</h4>
+                  <p>База, прямой поиск, рекомендации. Передаём только релевантные профили.</p>
+                  <span class="day">Day 0–5</span>
+                </div>
+              </li>
+              <li>
+                <span class="num">03</span>
+                <div>
+                  <h4>Интервью и калибровка</h4>
+                  <p>Собираем фидбэк и оперативно уточняем профиль, чтобы ускорить выход на оффер.</p>
+                  <span class="day">Day 5–12</span>
+                </div>
+              </li>
+              <li>
+                <span class="num">04</span>
+                <div>
+                  <h4>Оффер и сопровождение</h4>
+                  <p>Помогаем с переговорной стратегией и удерживаем кандидата до первого рабочего дня.</p>
+                  <span class="day">Day 12–22</span>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
       </section>
 
       <section id="proof" class="section">
         <div class="section-head reveal">
+          <span class="id">04 — Кейсы</span>
           <p class="eyebrow">Кейсы и результат</p>
           <h2>Почему с нами остаются надолго</h2>
         </div>
