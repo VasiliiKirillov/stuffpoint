@@ -887,7 +887,7 @@ body {
     border-color: var(--line);
     background: color-mix(in oklab, var(--bg) 96%, white 4%);
     padding: 1.9rem 1.75rem;
-    min-height: 645px;
+    min-height: 592px;
   }
   .funnel-side ol {
     gap: 0;
