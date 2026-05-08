@@ -873,7 +873,48 @@ body {
   .specialists-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .contacts-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .kpi-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .funnel-block { grid-template-columns: 1.4fr 1fr; align-items: start; }
+  .funnel-block { grid-template-columns: 1.38fr 0.92fr; align-items: start; gap: 1.35rem; }
+  .funnel-svg-wrap {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: var(--line);
+    background: color-mix(in oklab, var(--bg) 96%, white 4%);
+    padding: 1.9rem 1.75rem;
+  }
+  .funnel-side ol {
+    gap: 0;
+    border-top: 2px solid rgba(24, 24, 26, 0.75);
+  }
+  .funnel-side li {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid var(--line);
+    padding: 1.2rem 0;
+    gap: 0.95rem;
+  }
+  .funnel-side .num {
+    color: #8f8f8b;
+    font-size: 1.05rem;
+    min-width: 2.5rem;
+  }
+  .funnel-side h4 {
+    font-size: 1.03rem;
+    font-weight: 500;
+  }
+  .funnel-side p {
+    margin-top: 0.35rem;
+    color: #7d7d79;
+    font-size: 0.92rem;
+  }
+  .funnel-side .day {
+    margin-top: 0.25rem;
+    display: inline-block;
+    color: #6e7049;
+    letter-spacing: 0.11em;
+    font-size: 0.76rem;
+  }
   .section-cta {
     grid-template-columns: 1fr auto;
     padding: 3.5rem 3rem;
