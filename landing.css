@@ -857,12 +857,12 @@ body {
     align-items: end;
     gap: 1rem 1.8rem;
   }
-  .hero-copy h1 { grid-column: 1 / span 2; max-width: 16ch; }
-  .hero-copy .hero-meta { grid-column: 2; grid-row: 2; align-self: start; }
+  .hero-copy h1 { grid-column: 1; grid-row: 1; max-width: 11.5ch; margin-bottom: 0.2rem; }
+  .hero-copy .hero-meta { grid-column: 2; grid-row: 1; align-self: start; }
   .hero-copy .hero-lede { grid-column: 1; grid-row: 2; }
   .hero-copy .hero-actions {
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2;
     justify-content: flex-end;
     margin-top: 0.2rem;
   }
