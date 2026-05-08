@@ -154,6 +154,7 @@ body {
 .hero-meta {
   display: grid;
   gap: 0.35rem;
+  margin: 0.5rem 0 1rem;
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
