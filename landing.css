@@ -329,11 +329,11 @@ body {
   margin-top: 1.6rem;
 }
 .funnel-svg-wrap {
-  background: var(--paper);
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 1.6rem;
+  background: color-mix(in oklab, var(--bg) 96%, white 4%);
+  border: 1px solid var(--line);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 1.9rem 1.75rem;
   display: flex;
   align-items: stretch;
 }
@@ -347,41 +347,46 @@ body {
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 0.9rem;
+  gap: 0;
+  border-top: 2px solid rgba(24, 24, 26, 0.75);
 }
 .funnel-side li {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 1rem;
-  background: var(--paper);
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 1.1rem 1.3rem;
+  gap: 0.95rem;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px solid var(--line);
+  padding: 1.2rem 0;
 }
 .funnel-side .num {
   font-family: "Space Grotesk", sans-serif;
-  color: var(--brand);
+  color: #8f8f8b;
   font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
+  min-width: 2.5rem;
 }
 .funnel-side h4 {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1rem;
+  font-size: 1.03rem;
   font-weight: 500;
 }
 .funnel-side p {
-  margin: 0.3rem 0 0.4rem;
-  color: var(--text-2);
+  margin: 0.35rem 0 0.4rem;
+  color: #7d7d79;
   font-size: 0.92rem;
 }
 .funnel-side .day {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
+  margin-top: 0.25rem;
+  display: inline-block;
+  color: #6e7049;
+  letter-spacing: 0.11em;
+  font-size: 0.76rem;
   text-transform: uppercase;
-  color: var(--muted);
 }
 
 /* ── Section heading с нумерацией ───── */
@@ -882,46 +887,7 @@ body {
   .kpi-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .funnel-block { grid-template-columns: 1.38fr 0.92fr; align-items: start; gap: 1.35rem; }
   .funnel-svg-wrap {
-    border-radius: 0;
-    box-shadow: none;
-    border-color: var(--line);
-    background: color-mix(in oklab, var(--bg) 96%, white 4%);
-    padding: 1.9rem 1.75rem;
     min-height: 592px;
-  }
-  .funnel-side ol {
-    gap: 0;
-    border-top: 2px solid rgba(24, 24, 26, 0.75);
-  }
-  .funnel-side li {
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    border-bottom: 1px solid var(--line);
-    padding: 1.2rem 0;
-    gap: 0.95rem;
-  }
-  .funnel-side .num {
-    color: #8f8f8b;
-    font-size: 1.05rem;
-    min-width: 2.5rem;
-  }
-  .funnel-side h4 {
-    font-size: 1.03rem;
-    font-weight: 500;
-  }
-  .funnel-side p {
-    margin-top: 0.35rem;
-    color: #7d7d79;
-    font-size: 0.92rem;
-  }
-  .funnel-side .day {
-    margin-top: 0.25rem;
-    display: inline-block;
-    color: #6e7049;
-    letter-spacing: 0.11em;
-    font-size: 0.76rem;
   }
   .section-cta {
     grid-template-columns: 1fr auto;
