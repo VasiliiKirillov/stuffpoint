@@ -119,8 +119,12 @@ body {
   line-height: 1.04;
   letter-spacing: -0.02em;
   margin: 0.5rem 0 1rem;
-  max-width: 18ch;
+  max-width: 19ch;
   font-weight: 500;
+}
+
+.hero-copy h1 .hl {
+  white-space: nowrap;
 }
 
 .lead {
@@ -849,11 +853,11 @@ body {
     gap: 1.4rem;
   }
   .hero-copy {
-    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+    grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.55fr);
     align-items: end;
-    gap: 1.2rem 2.2rem;
+    gap: 1rem 1.8rem;
   }
-  .hero-copy h1 { grid-column: 1 / span 2; max-width: 13ch; }
+  .hero-copy h1 { grid-column: 1 / span 2; max-width: 16ch; }
   .hero-copy .hero-meta { grid-column: 2; grid-row: 2; align-self: start; }
   .hero-copy .hero-lede { grid-column: 1; grid-row: 2; }
   .hero-copy .hero-actions {
