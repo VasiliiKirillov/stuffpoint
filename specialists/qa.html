@@ -13,82 +13,42 @@
     />
     <link rel="stylesheet" href="../landing.css" />
   </head>
-  <body>
+  <body class="spec-page">
     <div class="bg-layer" aria-hidden="true"></div>
+
     <header class="topbar">
-      <a class="brand" href="../index.html#hero">Stuffpoint Recruitment</a>
+      <a class="brand" href="../index.html#hero">
+        <span class="brand-main">Stuffpoint</span>
+        <span class="brand-sub">Кадровое агентство нового типа</span>
+      </a>
       <nav class="topnav" aria-label="Навигация страницы">
         <a href="../index.html#tracks">Все направления</a>
         <a href="../index.html#contacts">Контакты</a>
       </nav>
-      <button class="btn btn-small" type="button" data-open-modal>Связаться</button>
+      <a class="btn btn-small" href="../index.html#contacts">Связаться →</a>
     </header>
 
-    <main class="section specialist-page">
-      <a class="back-link" href="../index.html#tracks">← К направлениям</a>
-      <div class="page-intro reveal">
-        <p class="eyebrow">QA</p>
-        <h1>QA-инженеры для стабильных релизов</h1>
-        <p class="lead">Manual, Automation и SDET — кандидаты, готовые включиться в текущие процессы тестирования.</p>
-      </div>
+    <main>
+      <a class="spec-back" href="../index.html#tracks">← к направлениям</a>
 
-      <section class="specialists-layout">
-        <article class="profile-card reveal">
-          <h2>👩‍🔬 Анна Соколова</h2>
-          <p class="meta">Senior QA Automation · 7 лет опыта · Москва</p>
-          <ul class="chip-list"><li>Java</li><li>Selenium</li><li>TestNG</li><li>Allure</li></ul>
-          <p>Внедряла автоматизацию с нуля в банке, покрытие выросло с 12% до 78% за полтора года.</p>
-        </article>
-        <article class="profile-card reveal">
-          <h2>👨‍🔬 Виктор Лебедев</h2>
-          <p class="meta">SDET · 6 лет опыта · Санкт-Петербург</p>
-          <ul class="chip-list"><li>Python</li><li>Pytest</li><li>Playwright</li><li>CI/CD</li></ul>
-          <p>Совмещает разработку и тестирование, строит фреймворки на стыке E2E и unit.</p>
-        </article>
-        <article class="profile-card reveal">
-          <h2>👩‍🔬 Мария Голубева</h2>
-          <p class="meta">Manual QA Lead · 8 лет опыта · Казань</p>
-          <ul class="chip-list"><li>Manual</li><li>API</li><li>Postman</li><li>TestRail</li></ul>
-          <p>Опытный лид ручного тестирования, выстраивает процессы регрессии и приёмки.</p>
-        </article>
-        <article class="profile-card reveal">
-          <h2>👨‍🔬 Денис Антонов</h2>
-          <p class="meta">Mobile QA Auto · 5 лет опыта · Ереван</p>
-          <ul class="chip-list"><li>Appium</li><li>Kotlin</li><li>XCUITest</li><li>Charles</li></ul>
-          <p>Специализируется на тестировании iOS и Android приложений, опыт работы в финтехе.</p>
-        </article>
-        <article class="profile-card reveal">
-          <h2>👩‍🔬 Татьяна Жукова</h2>
-          <p class="meta">QA Lead · 9 лет опыта · Тбилиси</p>
-          <ul class="chip-list"><li>Strategy</li><li>Performance</li><li>JMeter</li><li>Security</li></ul>
-          <p>Закрывает performance и security тестирование, ведёт стратегию качества в продукте.</p>
-        </article>
+      <section class="spec-head">
+        <span class="id"><span>03 — Направления / 03 — QA</span><span>5 специалистов · обновлено 05.2026</span></span>
+        <h1>QA для <mark>стабильных</mark> релизов.</h1>
+        <p class="lede">Manual, Automation и SDET профили, которые быстро встраиваются в текущие процессы качества.</p>
+      </section>
+
+      <section class="spec-list">
+        <div class="profile"><span class="n">01</span><div><h3>👩‍🔬 Анна Соколова</h3><div class="role">Senior QA Automation</div></div><div><p>Внедряла автоматизацию с нуля в банке, покрытие выросло с 12% до 78% за полтора года.</p><div class="chips"><span class="chip">Java</span><span class="chip">Selenium</span><span class="chip">TestNG</span><span class="chip">Allure</span></div></div><div class="stat"><span class="v">7 лет</span><span class="l">Москва</span></div><a class="request" href="../index.html#contacts">Запросить CV</a></div>
+        <div class="profile"><span class="n">02</span><div><h3>👨‍🔬 Виктор Лебедев</h3><div class="role">SDET</div></div><div><p>Совмещает разработку и тестирование, строит фреймворки на стыке E2E и unit.</p><div class="chips"><span class="chip">Python</span><span class="chip">Pytest</span><span class="chip">Playwright</span><span class="chip">CI/CD</span></div></div><div class="stat"><span class="v">6 лет</span><span class="l">СПб</span></div><a class="request" href="../index.html#contacts">Запросить CV</a></div>
+        <div class="profile"><span class="n">03</span><div><h3>👩‍🔬 Мария Голубева</h3><div class="role">Manual QA Lead</div></div><div><p>Опытный лид ручного тестирования, выстраивает процессы регрессии и приёмки.</p><div class="chips"><span class="chip">Manual</span><span class="chip">API</span><span class="chip">Postman</span><span class="chip">TestRail</span></div></div><div class="stat"><span class="v">8 лет</span><span class="l">Казань</span></div><a class="request" href="../index.html#contacts">Запросить CV</a></div>
+        <div class="profile"><span class="n">04</span><div><h3>👨‍🔬 Денис Антонов</h3><div class="role">Mobile QA Auto</div></div><div><p>Специализируется на тестировании iOS и Android приложений, опыт работы в финтехе.</p><div class="chips"><span class="chip">Appium</span><span class="chip">Kotlin</span><span class="chip">XCUITest</span><span class="chip">Charles</span></div></div><div class="stat"><span class="v">5 лет</span><span class="l">Ереван</span></div><a class="request" href="../index.html#contacts">Запросить CV</a></div>
+        <div class="profile"><span class="n">05</span><div><h3>👩‍🔬 Татьяна Жукова</h3><div class="role">QA Lead</div></div><div><p>Закрывает performance и security тестирование, ведёт стратегию качества в продукте.</p><div class="chips"><span class="chip">Strategy</span><span class="chip">Performance</span><span class="chip">JMeter</span><span class="chip">Security</span></div></div><div class="stat"><span class="v">9 лет</span><span class="l">Тбилиси</span></div><a class="request" href="../index.html#contacts">Запросить CV</a></div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Stuffpoint Recruitment. Все права защищены.</p>
+      <span>© 2026 · Stuffpoint Recruitment</span>
+      <span>QA · 5/5</span>
     </footer>
-
-    <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
-      <div class="modal-overlay" data-close-modal></div>
-      <div class="modal-panel" role="document">
-        <button class="modal-close" type="button" aria-label="Закрыть" data-close-modal>×</button>
-        <h2 id="modal-title">Оставьте заявку</h2>
-        <p>Ответим в течение одного рабочего дня.</p>
-        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-          <input type="hidden" name="subject" value="Заявка по направлению QA" />
-          <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" />
-          <label>Имя<input type="text" name="name" required /></label>
-          <label>Email<input type="email" name="email" required /></label>
-          <label>Компания<input type="text" name="company" /></label>
-          <label>Сообщение<textarea name="message" rows="4" required></textarea></label>
-          <button class="btn" type="submit">Отправить заявку</button>
-        </form>
-      </div>
-    </div>
-
-    <script src="../main.js"></script>
   </body>
 </html>

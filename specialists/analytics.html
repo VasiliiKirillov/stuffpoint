@@ -13,64 +13,39 @@
     />
     <link rel="stylesheet" href="../landing.css" />
   </head>
-  <body>
+  <body class="spec-page">
     <div class="bg-layer" aria-hidden="true"></div>
+
     <header class="topbar">
-      <a class="brand" href="../index.html#hero">Stuffpoint Recruitment</a>
+      <a class="brand" href="../index.html#hero">
+        <span class="brand-main">Stuffpoint</span>
+        <span class="brand-sub">Кадровое агентство нового типа</span>
+      </a>
       <nav class="topnav" aria-label="Навигация страницы">
         <a href="../index.html#tracks">Все направления</a>
         <a href="../index.html#contacts">Контакты</a>
       </nav>
-      <button class="btn btn-small" type="button" data-open-modal>Связаться</button>
+      <a class="btn btn-small" href="../index.html#contacts">Связаться →</a>
     </header>
 
-    <main class="section specialist-page">
-      <a class="back-link" href="../index.html#tracks">← К направлениям</a>
-      <div class="page-intro reveal">
-        <p class="eyebrow">Data & Analytics</p>
-        <h1>Data-специалисты для продуктов, ML и аналитики</h1>
-        <p class="lead">Аналитики, BI и Data Engineers — кандидаты под продуктовые команды и ML-проекты.</p>
-      </div>
+    <main>
+      <a class="spec-back" href="../index.html#tracks">← к направлениям</a>
 
-      <section class="specialists-layout">
-        <article class="profile-card reveal">
-          <h2>👩‍📊 Наталья Гребнева</h2>
-          <p class="meta">Senior Product Analyst · 6 лет опыта · Москва</p>
-          <ul class="chip-list"><li>SQL</li><li>Python</li><li>A/B</li><li>Amplitude</li></ul>
-          <p>Запускала эксперименты в e-commerce продукте, фокус на retention и LTV метриках.</p>
-        </article>
-        <article class="profile-card reveal">
-          <h2>👨‍📊 Роман Лавров</h2>
-          <p class="meta">Data Engineer · 7 лет опыта · Санкт-Петербург</p>
-          <ul class="chip-list"><li>Spark</li><li>Airflow</li><li>Kafka</li><li>Snowflake</li></ul>
-          <p>Строил аналитический контур с нуля, опыт работы с потоковой и batch обработкой.</p>
-        </article>
+      <section class="spec-head">
+        <span class="id"><span>03 — Направления / 06 — Data & Analytics</span><span>2 специалиста · обновлено 05.2026</span></span>
+        <h1>Data и аналитика для <mark>продуктовых</mark> решений.</h1>
+        <p class="lede">Аналитики и data-инженеры с опытом построения метрик, витрин и data-процессов.</p>
+      </section>
+
+      <section class="spec-list">
+        <div class="profile"><span class="n">01</span><div><h3>👩‍📊 Наталья Гребнева</h3><div class="role">Senior Product Analyst</div></div><div><p>Запускала эксперименты в e-commerce продукте, фокус на retention и LTV метриках.</p><div class="chips"><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">A/B</span><span class="chip">Amplitude</span></div></div><div class="stat"><span class="v">6 лет</span><span class="l">Москва</span></div><a class="request" href="../index.html#contacts">Запросить CV</a></div>
+        <div class="profile"><span class="n">02</span><div><h3>👨‍📊 Роман Лавров</h3><div class="role">Data Engineer</div></div><div><p>Строил аналитический контур с нуля, опыт работы с потоковой и batch обработкой.</p><div class="chips"><span class="chip">Spark</span><span class="chip">Airflow</span><span class="chip">Kafka</span><span class="chip">Snowflake</span></div></div><div class="stat"><span class="v">7 лет</span><span class="l">СПб</span></div><a class="request" href="../index.html#contacts">Запросить CV</a></div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Stuffpoint Recruitment. Все права защищены.</p>
+      <span>© 2026 · Stuffpoint Recruitment</span>
+      <span>Data · 2/2</span>
     </footer>
-
-    <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
-      <div class="modal-overlay" data-close-modal></div>
-      <div class="modal-panel" role="document">
-        <button class="modal-close" type="button" aria-label="Закрыть" data-close-modal>×</button>
-        <h2 id="modal-title">Оставьте заявку</h2>
-        <p>Ответим в течение одного рабочего дня.</p>
-        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-          <input type="hidden" name="subject" value="Заявка по направлению Data & Analytics" />
-          <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" />
-          <label>Имя<input type="text" name="name" required /></label>
-          <label>Email<input type="email" name="email" required /></label>
-          <label>Компания<input type="text" name="company" /></label>
-          <label>Сообщение<textarea name="message" rows="4" required></textarea></label>
-          <button class="btn" type="submit">Отправить заявку</button>
-        </form>
-      </div>
-    </div>
-
-    <script src="../main.js"></script>
   </body>
 </html>

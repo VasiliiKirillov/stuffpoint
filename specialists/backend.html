@@ -13,64 +13,64 @@
     />
     <link rel="stylesheet" href="../landing.css" />
   </head>
-  <body>
+  <body class="spec-page">
     <div class="bg-layer" aria-hidden="true"></div>
+
     <header class="topbar">
-      <a class="brand" href="../index.html#hero">Stuffpoint Recruitment</a>
+      <a class="brand" href="../index.html#hero">
+        <span class="brand-main">Stuffpoint</span>
+        <span class="brand-sub">Кадровое агентство нового типа</span>
+      </a>
       <nav class="topnav" aria-label="Навигация страницы">
         <a href="../index.html#tracks">Все направления</a>
         <a href="../index.html#contacts">Контакты</a>
       </nav>
-      <button class="btn btn-small" type="button" data-open-modal>Связаться</button>
+      <a class="btn btn-small" href="../index.html#contacts">Связаться →</a>
     </header>
 
-    <main class="section specialist-page">
-      <a class="back-link" href="../index.html#tracks">← К направлениям</a>
-      <div class="page-intro reveal">
-        <p class="eyebrow">Backend</p>
-        <h1>Backend-инженеры для серверной части и интеграций</h1>
-        <p class="lead">Senior и lead-разработчики с опытом продуктовой разработки и нагруженных систем.</p>
-      </div>
+    <main>
+      <a class="spec-back" href="../index.html#tracks">← к направлениям</a>
 
-      <section class="specialists-layout">
-        <article class="profile-card reveal">
-          <h2>👨‍💻 Сергей Лазарев</h2>
-          <p class="meta">Senior Java Developer · 8 лет опыта · Москва</p>
-          <ul class="chip-list"><li>Java</li><li>Spring</li><li>Kafka</li><li>PostgreSQL</li></ul>
-          <p>Проектировал микросервисы для финтех-платформы, опыт работы с высокой нагрузкой и SLA.</p>
-        </article>
-        <article class="profile-card reveal">
-          <h2>👩‍💻 Екатерина Орлова</h2>
-          <p class="meta">Tech Lead Python · 9 лет опыта · Санкт-Петербург</p>
-          <ul class="chip-list"><li>Python</li><li>FastAPI</li><li>Django</li><li>Celery</li></ul>
-          <p>Ведёт команду из 6 разработчиков, выстраивает процессы code review и observability.</p>
-        </article>
+      <section class="spec-head">
+        <span class="id"><span>03 — Направления / 02 — Backend</span><span>2 специалиста · обновлено 05.2026</span></span>
+        <h1>Backend для <mark>серверной</mark> логики и интеграций.</h1>
+        <p class="lede">Профили с опытом высоких нагрузок, микросервисов и продуктовой разработки.</p>
+      </section>
+
+      <section class="spec-list">
+        <div class="profile">
+          <span class="n">01</span>
+          <div>
+            <h3>👨‍💻 Сергей Лазарев</h3>
+            <div class="role">Senior Java</div>
+          </div>
+          <div>
+            <p>Проектировал микросервисы для финтех-платформы, опыт работы с высокой нагрузкой и SLA.</p>
+            <div class="chips"><span class="chip">Java</span><span class="chip">Spring</span><span class="chip">Kafka</span><span class="chip">PostgreSQL</span></div>
+          </div>
+          <div class="stat"><span class="v">8 лет</span><span class="l">Москва</span></div>
+          <a class="request" href="../index.html#contacts">Запросить CV</a>
+        </div>
+
+        <div class="profile">
+          <span class="n">02</span>
+          <div>
+            <h3>👩‍💻 Екатерина Орлова</h3>
+            <div class="role">Tech Lead Python</div>
+          </div>
+          <div>
+            <p>Ведёт команду из 6 разработчиков, выстраивает процессы code review и observability.</p>
+            <div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Django</span><span class="chip">Celery</span></div>
+          </div>
+          <div class="stat"><span class="v">9 лет</span><span class="l">СПб</span></div>
+          <a class="request" href="../index.html#contacts">Запросить CV</a>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Stuffpoint Recruitment. Все права защищены.</p>
+      <span>© 2026 · Stuffpoint Recruitment</span>
+      <span>Backend · 2/2</span>
     </footer>
-
-    <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
-      <div class="modal-overlay" data-close-modal></div>
-      <div class="modal-panel" role="document">
-        <button class="modal-close" type="button" aria-label="Закрыть" data-close-modal>×</button>
-        <h2 id="modal-title">Оставьте заявку</h2>
-        <p>Ответим в течение одного рабочего дня.</p>
-        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-          <input type="hidden" name="subject" value="Заявка по направлению Backend" />
-          <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" />
-          <label>Имя<input type="text" name="name" required /></label>
-          <label>Email<input type="email" name="email" required /></label>
-          <label>Компания<input type="text" name="company" /></label>
-          <label>Сообщение<textarea name="message" rows="4" required></textarea></label>
-          <button class="btn" type="submit">Отправить заявку</button>
-        </form>
-      </div>
-    </div>
-
-    <script src="../main.js"></script>
   </body>
 </html>
