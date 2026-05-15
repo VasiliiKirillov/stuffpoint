@@ -1,4 +1,4 @@
-# Stuffpoint Recruitment Landing
+# ai.stuff Landing
 
 Статический одностраничный лендинг для кадрового агентства.
 
